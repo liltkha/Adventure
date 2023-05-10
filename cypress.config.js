@@ -10,7 +10,7 @@ module.exports = defineConfig({
       const bundler = createBundler({
         plugins: [createEsbuildPlugin(config)],
       });
-
+// add dotenv file hear
       on("file:preprocessor", bundler);
       await addCucumberPreprocessorPlugin(on, config);
 
