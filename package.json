@@ -19,6 +19,7 @@
   "homepage": "https://github.com/liltkha/Adventure#readme",
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
+    "cypress": "^12.11.0",
     "cypress-downloadfile": "^1.2.3",
     "dotenv": "^16.0.3"
   },
@@ -30,11 +31,14 @@
       "filePrefix": "",
       "fileSuffix": ".cucumber"
     },
-  "cypress-cucumber-preprocessor": {
-"nonGlobalStepDefinations": true,
-"step-definations": "cypress/e2e/etc"
+    "cypress-cucumber-preprocessor": {
+      "nonGlobalStepDefinations": true,
+      "step-definations": "cypress/e2e/etc"
+    }
+  },
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "allure-cucumberjs": "^2.3.0",
+    "allure-js-commons": "^2.3.0"
   }
 }
-  }
-
-
