@@ -5,17 +5,21 @@ const addCucumberPreprocessorPlugin =
 const createEsbuildPlugin =
   require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
 module.exports = defineConfig({
+  chromeWebSecurity:false,
   e2e: {
+   
     async setupNodeEvents(on, config) {
       const bundler = createBundler({
         plugins: [createEsbuildPlugin(config)],
       });
-// add dotenv file hear
+      //add dotenv
       on("file:preprocessor", bundler);
       await addCucumberPreprocessorPlugin(on, config);
 
       return config;
     },
     specPattern: "cypress/e2e/**/*.feature",
+  
+
   },
 });
