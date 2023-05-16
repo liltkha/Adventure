@@ -16,5 +16,5 @@ When("I scroll down to the input fields", () => {
   cy.get('[style="overflow-y: scroll; height:100px;"]').scrollIntoView();
 });
 Then("the Subject input  field should contain {string}", (name) => {
-  cy.get('#subject').type( name);
+  cy.get("#subject").type(name);
 });

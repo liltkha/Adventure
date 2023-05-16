@@ -21,7 +21,8 @@
     "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
     "cypress": "^12.11.0",
     "cypress-downloadfile": "^1.2.3",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "node-modules": "^1.0.1"
   },
   "cypress-cucumber-preprocessor": {
     "stepDefinitions": "cypress/e2e/**/*.{js,ts}",
