@@ -18,4 +18,3 @@ When("I scroll down to the input fields", () => {
 Then("the Subject input  field should contain {string}", (name) => {
   cy.get('#subject').type( name);
 });
-
