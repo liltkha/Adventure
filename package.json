@@ -1,0 +1,42 @@
+{
+  "name": "adventure",
+  "version": "1.0.0",
+  "description": "Adventure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liltkha/Adventure.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liltkha/Adventure/issues"
+  },
+  "homepage": "https://github.com/liltkha/Adventure#readme",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress-downloadfile": "^1.2.3",
+    "dotenv": "^16.0.3",
+    "node-modules": "^1.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/**/*.{js,ts}",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    },
+    "cypress-cucumber-preprocessor": {
+      "nonGlobalStepDefinations": true,
+      "step-definations": "cypress/e2e/etc"
+    }
+  }
+
+  }
+
